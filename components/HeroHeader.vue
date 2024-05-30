@@ -39,7 +39,7 @@
             duration: 1000,
           },
         }"
-        class="grid place-content-center icc_logo_container md:absolute top-[-40px] left-[-40px] z-10 w-[435px] h-[435px] rounded-full shadow-2xl bg-zinc-50"
+        class="grid place-content-center icc_logo_container md:absolute top-[-40px] left-[-40px] z-10 w-[435px] h-[435px] rounded-full bg-zinc-50"
       >
         <svg
           v-motion
@@ -248,13 +248,13 @@
   </div>
 </template>
 
-<script setup>
-onMounted(() => {
-  document.title = "Jus Mundi - ICC Arbitration Awards";
-});
-</script>
+<script setup></script>
 
 <style scoped>
+.icc_logo_container {
+  box-shadow: 0px 0px 70px -5px #e2e8f0;
+}
+
 .jm_cta_btn {
   box-shadow: 0px 5px 20px -5px rgba(100, 118, 134, 0.7);
 }
