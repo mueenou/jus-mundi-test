@@ -1,5 +1,7 @@
 <template>
-  <div class="grid grid-cols-2 px-32 gap-x-20 py-20 bg-zinc-50 relative overflow-hidden">
+  <div
+    class="flex flex-col md:grid md:grid-cols-2 px-8 md:px-32 gap-x-20 py-20 bg-zinc-50 relative overflow-hidden"
+  >
     <!-- green artifacts -->
     <div class="absolute w-[25px] h-[2px] bg-green-500 top-[60px] left-[60px]"></div>
     <div class="absolute h-[25px] w-[2px] bg-green-500 bottom-[50px] left-[60px]"></div>
@@ -25,9 +27,9 @@
       TRY JUS MUNDI
     </button>
     <!-- left side content -->
-    <div class="relative">
+    <div class="hidden md:block relative">
       <div
-        class="grid place-content-center icc_logo absolute top-[-40px] left-[-40px] z-10 w-[435px] h-[435px] rounded-full shadow-2xl bg-zinc-50"
+        class="grid place-content-center icc_logo md:absolute top-[-40px] left-[-40px] z-10 w-[435px] h-[435px] rounded-full shadow-2xl bg-zinc-50"
       >
         <svg
           width="325"
@@ -46,7 +48,7 @@
         </svg>
       </div>
       <div
-        class="jm_logo absolute top-[350px] left-[-20px] z-20 w-[175px] h-[175px] backdrop-brightness-105 rounded-full grid place-content-center"
+        class="jm_logo md:absolute top-[350px] left-[-20px] z-20 w-[175px] h-[175px] backdrop-brightness-105 rounded-full grid place-content-center"
       >
         <svg
           width="108"
@@ -121,7 +123,7 @@
       </div>
 
       <div
-        class="absolute case_bg rounded-lg overflow-hidden w-[450px] h-[320px] top-[270px] left-[20px] bg-cover bg-center z-0"
+        class="md:absolute case_bg rounded-lg overflow-hidden w-[450px] h-[320px] top-[270px] left-[20px] bg-cover bg-center z-0"
       ></div>
     </div>
     <!-- right side content -->

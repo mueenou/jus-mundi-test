@@ -9,18 +9,18 @@
         </h1>
         <div class="w-[25px] h-[2px] bg-green-500"></div>
       </div>
-      <p class="font-ibm font-light leading-8 w-[750px] mx-auto">
+      <p class="font-ibm font-light leading-8 lg:w-[750px] mx-auto">
         Throughout its 100-year history, ICC has brought global business together to
         support an international rules-based order, including the promotion of global
         trade and commerce through the work of the ICC International Court of Arbitration.
       </p>
-      <p class="font-ibm font-light leading-8 w-[800px] mx-auto">
+      <p class="font-ibm font-light leading-8 lg:w-[800px] mx-auto">
         ICC has partnered with Jus Mundi to provide full public access to all publishable
         ICC International Court of Arbitration awards and related documents made as of 1
         January 2019
       </p>
     </div>
-    <div class="grid grid-cols-3 px-14 mt-24">
+    <div class="md:grid md:grid-cols-3 px-14 mt-24 flex flex-col gap-y-8">
       <div class="flex flex-col text-center items-center gap-y-3">
         <svg
           width="49"

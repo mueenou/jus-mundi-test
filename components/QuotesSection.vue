@@ -1,8 +1,8 @@
 <template>
-  <div class="w-[550px] flex flex-col gap-y-6 mx-auto py-24">
+  <div class="lg:w-[550px] flex flex-col gap-y-6 mx-auto py-24 px-4">
     <!-- quote -->
     <div class="relative">
-      <div class="absolute left-[-60px]">
+      <div class="hidden lg:block absolute left-[-60px]">
         <svg
           width="28"
           height="20"
@@ -23,7 +23,7 @@
         commitments since its creation and an instrumental factor in facilitating the
         development of trade worldwide.
       </blockquote>
-      <div class="absolute bottom-[10px] right-[-60px]">
+      <div class="hidden lg:block absolute bottom-[10px] right-[-60px]">
         <svg
           width="28"
           height="20"
