@@ -228,7 +228,7 @@
             delay: 2600,
           },
         }"
-        class="flex flex-row gap-x-2 items-center font-lato font-bold rounded-[4px] bg-[#009EFE] text-white self-start py-5 px-6 text-xs tracking-widest"
+        class="flex flex-row gap-x-2 items-center font-lato font-bold rounded-[4px] bg-[#009EFE] text-white self-start py-5 px-8 text-xs tracking-widest shadow-xl"
       >
         <span>
           <svg
