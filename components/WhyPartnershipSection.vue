@@ -5,7 +5,7 @@
         <div class="w-[25px] h-[2px] bg-green-500"></div>
 
         <h1 class="font-larkenExtraBold text-5xl leading-[65px] text-zinc-800">
-          Why this Partnership?
+          Why this partnership?
         </h1>
         <div class="w-[25px] h-[2px] bg-green-500"></div>
       </div>
@@ -20,8 +20,8 @@
         January 2019
       </p>
     </div>
-    <div class="md:grid md:grid-cols-3 px-14 mt-24 flex flex-col gap-y-8">
-      <div class="flex flex-col text-center items-center gap-y-3">
+    <div class="md:grid md:grid-cols-3 px-14 mt-24 flex flex-col gap-y-8 justify-center">
+      <div class="flex flex-col text-center items-center gap-y-4 w-96 mx-auto">
         <svg
           width="49"
           height="44"
@@ -67,13 +67,12 @@
           />
         </svg>
         <h2 class="font-bold">More key arbitration content</h2>
-        <p class="font-light text-sm leading-6">
-          This unique partnership means you will have access to <br />
-          more key arbitration content to level up your arbitration <br />
-          research.
+        <p class="font-light text-[15px] leading-6">
+          This unique partnership means you will have access to more key arbitration
+          content to level up your arbitration research.
         </p>
       </div>
-      <div class="flex flex-col text-center items-center gap-y-4">
+      <div class="flex flex-col text-center items-center gap-y-4 w-96 mx-auto">
         <svg
           width="48"
           height="44"
@@ -117,12 +116,11 @@
           />
         </svg>
         <h2 class="font-bold">More transparency</h2>
-        <p class="font-light text-sm leading-6">
-          You will appreciate the increase in transparency in <br />
-          arbitration!
+        <p class="font-light text-[15px] leading-6">
+          You will appreciate the increase in transparency in arbitration!
         </p>
       </div>
-      <div class="flex flex-col text-center items-center gap-y-4">
+      <div class="flex flex-col text-center items-center gap-y-4 w-96 mx-auto">
         <svg
           width="49"
           height="44"
@@ -152,10 +150,9 @@
           </defs>
         </svg>
         <h2 class="font-bold">More efficiency</h2>
-        <p class="font-light text-sm leading-6">
-          Jus Mundi's AI-powered technology efficiently delivers <br />
-          thorough legal research and due diligence with full <br />
-          confidence.
+        <p class="font-light text-[15px] leading-6">
+          Jus Mundi's AI-powered technology efficiently delivers thorough legal research
+          and due diligence with full confidence.
         </p>
       </div>
     </div>

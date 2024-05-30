@@ -10,7 +10,7 @@
     ></div>
     <!-- call to action button try jus mundi -->
     <button
-      class="jm_cta_btn absolute text-xs font-bold flex flex-row items-center self-end rounded-[4px] p-3 font-lato gap-x-3 bg-zinc-50 top-10 right-16 tracking-widest"
+      class="jm_cta_btn absolute text-xs font-bold flex flex-row items-center self-end rounded-[4px] py-3.5 px-4 font-lato gap-x-3 bg-zinc-50 top-10 right-16 tracking-widest"
     >
       <svg
         width="16"
@@ -29,9 +29,31 @@
     <!-- left side content -->
     <div class="hidden md:block relative">
       <div
-        class="grid place-content-center icc_logo md:absolute top-[-40px] left-[-40px] z-10 w-[435px] h-[435px] rounded-full shadow-2xl bg-zinc-50"
+        v-motion
+        :initial="{
+          scale: 0,
+        }"
+        :enter="{
+          scale: 1,
+          transition: {
+            duration: 1000,
+          },
+        }"
+        class="grid place-content-center icc_logo_container md:absolute top-[-40px] left-[-40px] z-10 w-[435px] h-[435px] rounded-full shadow-2xl bg-zinc-50"
       >
         <svg
+          v-motion
+          :initial="{
+            opacity: 0,
+          }"
+          :enter="{
+            opacity: 1,
+            transition: {
+              duration: 700,
+              delay: 1000,
+            },
+          }"
+          class="icc_logo"
           width="325"
           height="150"
           viewBox="0 0 325 166"
@@ -48,6 +70,22 @@
         </svg>
       </div>
       <div
+        v-motion
+        :initial="{
+          opacity: 0,
+          y: 20,
+          x: -50,
+        }"
+        :enter="{
+          opacity: 1,
+          y: 0,
+          x: 0,
+          transition: {
+            duration: 500,
+            delay: 1800,
+            ease: 'easeOut',
+          },
+        }"
         class="jm_logo md:absolute top-[350px] left-[-20px] z-20 w-[175px] h-[175px] backdrop-brightness-105 rounded-full grid place-content-center"
       >
         <svg
@@ -123,22 +161,73 @@
       </div>
 
       <div
+        v-motion
+        :initial="{
+          opacity: 0,
+        }"
+        :enter="{
+          opacity: 1,
+          transition: {
+            duration: 300,
+            delay: 1800,
+          },
+        }"
         class="md:absolute case_bg rounded-lg overflow-hidden w-[450px] h-[320px] top-[270px] left-[20px] bg-cover bg-center z-0"
       ></div>
     </div>
     <!-- right side content -->
     <div class="flex flex-col gap-10 justify-between mt-10 z-10">
-      <h1 class="font-larkenExtraBold text-5xl leading-[65px] text-zinc-800">
+      <h1
+        v-motion
+        :initial="{
+          opacity: 0,
+          y: 20,
+        }"
+        :enter="{
+          y: 0,
+          opacity: 1,
+          transition: {
+            duration: 1300,
+            delay: 1000,
+            ease: 'easeOut',
+          },
+        }"
+        class="font-larkenExtraBold text-5xl leading-[65px] text-zinc-800"
+      >
         A Unique Partnership for the Publication of ICC Arbitration <br />
         Awards
       </h1>
-      <p class="font-ibm text-md font-light leading-7 text-zinc-800 tracking-wide mb-10">
+      <p
+        v-motion
+        :initial="{
+          opacity: 0,
+        }"
+        :enter="{
+          opacity: 1,
+          transition: {
+            duration: 300,
+            delay: 1000,
+          },
+        }"
+        class="font-ibm text-md font-light leading-7 text-zinc-800 tracking-wide mb-10"
+      >
         The International Chamber of Commerce (ICC) & Jus Mundi have joined forces to make
         ICC Arbitration Awards and related materials freely available to the global legal
         community.
       </p>
 
       <button
+        v-motion
+        :initial="{
+          opacity: 0,
+        }"
+        :enter="{
+          opacity: 1,
+          transition: {
+            duration: 300,
+            delay: 2600,
+          },
+        }"
         class="flex flex-row gap-x-2 items-center font-lato font-bold rounded-[4px] bg-[#009EFE] text-white self-start py-5 px-6 text-xs tracking-widest"
       >
         <span>
@@ -159,11 +248,15 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+onMounted(() => {
+  document.title = "Jus Mundi - ICC Arbitration Awards";
+});
+</script>
 
 <style scoped>
 .jm_cta_btn {
-  box-shadow: 0px 10px 40px -15px rgba(100, 118, 134, 0.7);
+  box-shadow: 0px 5px 20px -5px rgba(100, 118, 134, 0.7);
 }
 .case_bg {
   background-image: url("../public/images/case_bg.gif");
