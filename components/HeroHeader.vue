@@ -10,7 +10,7 @@
     ></div>
     <!-- call to action button try jus mundi -->
     <button
-      class="jm_cta_btn absolute text-xs font-bold flex flex-row items-center self-end rounded-[4px] py-3.5 px-4 font-lato gap-x-3 bg-zinc-50 top-10 right-16 tracking-widest"
+      class="jm_cta_btn jus-mundi-shadow absolute text-xs font-bold flex flex-row items-center self-end rounded-[4px] py-3.5 px-4 font-lato gap-x-3 bg-zinc-50 top-10 right-16 tracking-widest"
     >
       <svg
         width="16"
@@ -39,7 +39,7 @@
             duration: 1000,
           },
         }"
-        class="grid place-content-center icc_logo_container md:absolute top-[-40px] left-[-40px] z-10 w-[435px] h-[435px] rounded-full bg-zinc-50"
+        class="grid place-content-center icc_logo_container jus-mundi-shadow md:absolute top-[-40px] left-[-40px] z-10 w-[435px] h-[435px] rounded-full bg-zinc-50"
       >
         <svg
           v-motion
@@ -251,12 +251,8 @@
 <script setup></script>
 
 <style scoped>
-.icc_logo_container {
-  box-shadow: 0px 0px 70px -5px #e2e8f0;
-}
-
-.jm_cta_btn {
-  box-shadow: 0px 5px 20px -5px rgba(100, 118, 134, 0.7);
+.jus-mundi-shadow {
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
 }
 .case_bg {
   background-image: url("../public/images/case_bg.gif");
