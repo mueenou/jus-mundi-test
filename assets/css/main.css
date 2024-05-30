@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom styles here */
+/* Self-hosted fonts */
+
+@layer base {
+    @font-face {
+        font-family: "Larken";
+        font-weight: 400;
+        src: url("../../public/fonts/Larken-Regular.woff2") format("woff2"),
+            url("../../public/fonts/Larken-Regular.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Larken Bold";
+        font-weight: 700;
+        src: url("../../public/fonts/Larken-Bold.woff2") format("woff2"),
+            url("../../public/fonts/Larken-Bold.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Larken Bold Italic";
+        font-weight: 700;
+        font-style: italic;
+        src: url("../../public/fonts/Larken-BoldItalic.woff2") format("woff2"),
+            url("../../public/fonts/Larken-BoldItalic.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Larken Extra Bold";
+        font-weight: 800;
+        src: url("../../public/fonts/Larken-ExtraBold.woff2") format("woff2"),
+            url("../../public/fonts/Larken-ExtraBold.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Larken Italic";
+        font-weight: 400;
+        font-style: italic;
+        src: url("../../public/fonts/Larken-Italic.woff2") format("woff2"),
+            url("../../public/fonts/Larken-Italic.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Larken Light";
+        font-weight: 300;
+        src: url("../../public/fonts/Larken-Light.woff2") format("woff2"),
+            url("../../public/fonts/Larken-Light.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Larken Light Italic";
+        font-weight: 300;
+        font-style: italic;
+        src: url("../../public/fonts/Larken-LightItalic.woff2") format("woff2"),
+            url("../../public/fonts/Larken-LightItalic.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Jus Mundi";
+        src: url("../../public/fonts/icons.otf") format("otf");
+    }
+}
