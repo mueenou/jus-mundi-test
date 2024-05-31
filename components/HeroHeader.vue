@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col md:grid md:grid-cols-2 px-8 md:px-32 gap-x-20 py-20 bg-zinc-50 relative overflow-hidden"
+    class="flex flex-col md:grid min-w-screen md:grid-cols-2 px-8 md:px-32 gap-x-20 py-20 bg-zinc-50 relative overflow-hidden"
   >
     <!-- green artifacts -->
     <div class="absolute w-[25px] h-[2px] bg-green-500 top-[60px] left-[60px]"></div>
@@ -39,7 +39,7 @@
             duration: 1000,
           },
         }"
-        class="grid place-content-center icc_logo_container jus-mundi-shadow md:absolute top-[-40px] left-[-40px] z-10 w-[435px] h-[435px] rounded-full bg-zinc-50"
+        class="grid place-content-center icc_logo_container jus-mundi-shadow md:absolute md:top-[-40px] z-10 w-[435px] h-[435px] rounded-full bg-zinc-50"
       >
         <svg
           v-motion
