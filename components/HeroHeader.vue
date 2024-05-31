@@ -39,7 +39,7 @@
             duration: 1000,
           },
         }"
-        class="grid place-content-center icc_logo_container jus-mundi-shadow md:absolute md:top-[-40px] z-10 w-[435px] h-[435px] rounded-full bg-zinc-50"
+        class="grid place-content-center icc_logo_container jus-mundi-shadow md:absolute md:top-[-40px] md:left-[-40px] z-10 w-[435px] h-[435px] rounded-full bg-zinc-50"
       >
         <svg
           v-motion
@@ -247,8 +247,6 @@
     </div>
   </div>
 </template>
-
-<script setup></script>
 
 <style scoped>
 .jus-mundi-shadow {
